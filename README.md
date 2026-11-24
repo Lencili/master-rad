@@ -10,11 +10,13 @@ Priprema za master rad: statističke osnove fitovanja modela, MCMC, Flow Matchin
 | `00_osnove_bajesovska_inferenca/emcee_MCMC` | Primeri iz dokumentacije biblioteke emcee — quickstart, fit linije sa potcenjenim greškama, vreme autokorelacije, čuvanje lanca, paralelizacija, potezi |
 | `01_flow_matching` | Flow Matching (FMPE) za problem linearne regresije, poređenje sa tačnim posteriorom i provera kalibracije |
 | `02_PINNs` | PINN za prigušeni harmonijski oscilator: direktni problem i inverzni problem (određivanje nepoznatog μ), uticaj težine λ, otkrivanje jednačine; prati ETH DLSC 2023, predavanje „PINNs – Applications“ |
+| `03_PINN_masinsko_ucenje_u_astronomiji` | Rad na predmetu *Mašinsko učenje u astronomiji* (MATF): PINN primeri prepisani iz TensorFlow-a u PyTorch (ODE, Ojlerova greda, Navije–Stoksove jednačine sa analizom delova gubitka); PyTorch verzija *PINN_Solver* notebook-a (Burgersova i Eikonalova jednačina, identifikacija parametra λ, osetljivost na šum); originalni TensorFlow notebook (Blechschmidt i Ernst, MIT licenca) prilagođen za Keras 3 |
 
 ## Pokretanje
 
 ```
-pip install numpy scipy matplotlib torch emcee corner h5py tqdm
+pip install numpy scipy matplotlib torch emcee corner h5py tqdm deepxde
+# za originalni TensorFlow notebook: pip install tensorflow
 ```
 
 Notebook-i su već pokrenuti i sadrže rezultate i grafike.
@@ -27,3 +29,4 @@ Notebook-i su već pokrenuti i sadrže rezultate i grafike.
 - Dax i sar. (2023), *Flow Matching for Scalable Simulation-Based Inference*, [arXiv:2305.17161](https://arxiv.org/abs/2305.17161)
 - ETH Zürich, *Deep Learning in Scientific Computing 2023*: https://camlab.ethz.ch/teaching/deep-learning-in-scientific-computing-2023.html ; kod: https://github.com/benmoseley/DLSC-2023
 - Raissi, Perdikaris, Karniadakis (2019), *Physics-informed neural networks*, J. Comput. Phys.
+- Blechschmidt, Ernst (2021), *Three Ways to Solve Partial Differential Equations with Neural Networks — A Review*, [arXiv:2102.11802](https://arxiv.org/abs/2102.11802); kod: https://github.com/janblechschmidt/PDEsByNNs
