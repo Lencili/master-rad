@@ -1,0 +1,16 @@
+# Jupyter privremeni fajlovi
+.ipynb_checkpoints/
+__pycache__/
+
+# fajlovi koje notebook-i sami generisu
+*.h5
+
+# teorijski dokumenti i tudji materijali (slajdovi) - ostaju samo lokalno
+_teorija_lokalno/
+*.docx
+*.pdf
+
+# Word lock fajlovi i sistemsko
+~$*
+desktop.ini
+.DS_Store
